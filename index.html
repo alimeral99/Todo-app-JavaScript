@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <h1 class="app tittle">To Do App</h1>
+      <div class="card">
+        <div class="card-header bg-info">New Task</div>
+        <div class="card-body">
+          <form class="form">
+            <div class="input-group mt-3">
+              <input id="txt-taskName" class="form-control" type="text" />
+              <button
+                type="submit"
+                class="btn btn-info"
+                type="submit float right float-end"
+              >
+                <i class="fas fa-add"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-header">
+          Task List
+          <a
+            id="btnDeleteAll"
+            href="#"
+            class="btn btn-outline-danger btn-sm delete-all float-end"
+          >
+            DeleteAll
+          </a>
+        </div>
+        <ul id="task-list" class="list-group"></ul>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
